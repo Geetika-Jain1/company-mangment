@@ -8,7 +8,19 @@ public class DeveloperTests {
         var developer = new Developer("Geetika", "java");
 
         var expected ="Woop woop";
-        var acual =
+        var actual = developer.getSound();
+
+        assertEquals(expected, actual)
+    }
+    @Test
+    public void testGetProgrammingLanguage(){
+        var developer = new Developer("Geetika", "java");
+
+        var expected ="java";
+        var acual = developer.getProgrammingLanguage();
+
+        assertEquals(expected, actual);
+
     }
 
 }

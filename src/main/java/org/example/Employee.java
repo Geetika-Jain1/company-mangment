@@ -1,9 +1,8 @@
 package org.example;
 
-public class Employee {
-    private String name ;
+public class Employee extends Person {
     public Employee(String name){
-        this.name = name;
+        setName(name);
     }
     public String getSound(){
         return "Aaow";
@@ -15,6 +14,13 @@ public class Employee {
     }
 
     public void setName(String name) {
-        this.name = name;
+        String firstCharacter = name.substring(0,1).toUpperCase();
+        String rest = name.substring(1);
+        this.name = firstCharacter + rest;
+    }
+
+    @Override
+    public String eatFood() {
+        return "Nom nom nom!";
     }
 }

@@ -1,5 +1,6 @@
 import org.example.Employee;
 
+
 public class EmployeeTests {
 
     @Test
@@ -12,15 +13,23 @@ public class EmployeeTests {
         assertEquals(expected, actual);
     }
     @Test
-    public void testGEtSound(){
-        var employee = new Employee();
+    public void testGetSound(){
+        var employee = new Employee("Geetika");
 
-        var expected "Aaow";
+        var expected = "Aaow";
         var actual = employee.getSound();
 
         assertEquals(expected, actual);
     }
+    @Test
+    void eatFood (){
+        var employee = new Employee("Geetika");
 
+        var expected = "Nom nom nom!";
+        var actual = employee.getFood();
+
+        assertEquals(expected, actual);
+    }
 
 }
 
