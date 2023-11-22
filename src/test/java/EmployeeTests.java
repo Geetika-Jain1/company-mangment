@@ -1,4 +1,7 @@
 import org.example.Employee;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class EmployeeTests {
@@ -26,7 +29,7 @@ public class EmployeeTests {
         var employee = new Employee("Geetika");
 
         var expected = "Nom nom nom!";
-        var actual = employee.getFood();
+        var actual = employee.eatFood();
 
         assertEquals(expected, actual);
     }
