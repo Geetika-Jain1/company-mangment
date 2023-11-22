@@ -1,4 +1,4 @@
-import org.example.Employee;
+import org.example.employees.Employee;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

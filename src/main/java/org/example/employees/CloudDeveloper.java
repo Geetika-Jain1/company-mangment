@@ -1,6 +1,8 @@
-package org.example;
+package org.example.employees;
 
-public class CloudDeveloper extends Developer{
+import org.example.Website;
+
+public class CloudDeveloper extends Developer {
 
     public CloudDeveloper(String name, String programmingLanguage){
         super(name, programmingLanguage);

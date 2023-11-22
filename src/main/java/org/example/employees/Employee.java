@@ -1,4 +1,6 @@
-package org.example;
+package org.example.employees;
+
+import org.example.employees.Person;
 
 public class Employee extends Person {
     public Employee(String name){

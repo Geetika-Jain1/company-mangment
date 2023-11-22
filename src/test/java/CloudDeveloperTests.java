@@ -1,4 +1,4 @@
-import org.example.CloudDeveloper;
+import org.example.employees.CloudDeveloper;
 import org.example.Website;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
