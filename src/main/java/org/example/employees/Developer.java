@@ -1,6 +1,6 @@
 package org.example.employees;
 
-public class Developer extends Employee {
+public class Developer extends Employee implements ICanProgram {
     private String programmingLanguage;
 
     public Developer(String name, String programmingLanguage){
@@ -16,4 +16,9 @@ public class Developer extends Employee {
         return programmingLanguage;
     }
 
+    @Override
+    public String program() {
+        return name + " write some " + programmingLanguage;
+
+    }
 }

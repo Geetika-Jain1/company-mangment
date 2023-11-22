@@ -23,4 +23,10 @@ public class Utilities {
         return output;
     }
 
+    public enum Level {
+
+            Low,
+            Medium,
+            High,
+        }
 }
